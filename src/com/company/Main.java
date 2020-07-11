@@ -3,16 +3,16 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Person Peter = new Person("Peter", 60);
-        Person Celeste = new Person("Celeste", 55);
+        Person Jack = new Person("Jack", 60);
+        Person Claire = new Person("Claire", 55);
 
-        Dog Podge = new Dog("Podge", 12, Peter);
-        System.out.println(Podge);
+        Dog Rover = new Dog("Rover", 12, Jack);
+        System.out.println(Rover);
 
-        Podge.setOwner(Celeste);
-        System.out.println(Podge);
+        Rover.setOwner(Claire);
+        System.out.println(Rover);
 
-        Person personX = Podge.getOwner();
+        Person personX = Rover.getOwner();
         System.out.println("Person X is now: " +personX);
     }
 }
