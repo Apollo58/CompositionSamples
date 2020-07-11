@@ -14,5 +14,11 @@ public class Main {
 
         Person personX = Rover.getOwner();
         System.out.println("Person X is now: " +personX);
+
+        Rover.setOwner(Jack);
+        System.out.println(Rover);
+
+        Person personY = Rover.getOwner();
+        System.out.println("Person Y is now: " +personY);
     }
 }
