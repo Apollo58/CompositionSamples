@@ -6,7 +6,7 @@ public class Main {
         Person Jack = new Person("Jack", 60);
         Person Claire = new Person("Claire", 55);
 
-        Dog Rover = new Dog("Rover", 12, Jack);
+        Dog Rover = new Dog("Rover", 12, Jack, "Pug");
         System.out.println(Rover);
 
         Rover.setOwner(Claire);

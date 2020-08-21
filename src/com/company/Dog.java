@@ -1,31 +1,23 @@
 package com.company;
 
-public class Dog {
+public class Dog extends Animal {
 
-    private String name;
-    private int age;
+
+    private String breed;
     private Person owner;
 
-    public Dog(String name, int age, Person owner) {
-        this.name = name;
-        this.age = age;
+    public Dog(String name, int age, Person owner, String breed) {
+        super(name, age);
         this.owner = owner;
+        this.breed = breed;
     }
 
-    public String getName() {
-        return name;
+    public void setBreed(String breed) {
+        this.breed = breed;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
+    public String getBreed() {
+        return this.breed;
     }
 
     public Person getOwner() {
@@ -47,10 +39,11 @@ public class Dog {
     @Override
     public String toString() {
         return "Dog {" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", owner name=" + getOwnerName() +
-                ", owner age=" + getOwnerAge() +
+                "name = " + this.getName() + '\'' +
+                ", age = " + this.getAge() +
+                ", owner name = " + getOwnerName() +
+                ", owner age = " + getOwnerAge() +
+                ", breed = " + getBreed() +
                 '}';
     }
 }
