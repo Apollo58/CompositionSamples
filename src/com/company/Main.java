@@ -13,12 +13,12 @@ public class Main {
         System.out.println(Rover);
 
         Person personX = Rover.getOwner();
-        System.out.println("Person X is now: " +personX);
+        System.out.println("Person X is now: " + personX);
 
         Rover.setOwner(Jack);
         System.out.println(Rover);
 
         Person personY = Rover.getOwner();
-        System.out.println("Person Y is now: " +personY);
+        System.out.println("Person Y is now: " + personY);
     }
 }
